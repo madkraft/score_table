@@ -6,34 +6,34 @@ const Standings = ({standing}) => (
     <thead>
       <tr>
         <th>
-          Position
+          #
         </th>
         <th className='mdl-data-table__cell--non-numeric'>
           Team
         </th>
         <th>
-          PG
+          Pl
         </th>
-        <th>
-          Wins
+        <th className='mdl-layout--large-screen-only'>
+          W
         </th>
-        <th>
-          Draws
+        <th className='mdl-layout--large-screen-only'>
+          D
         </th>
-        <th>
-          Losses
+        <th className='mdl-layout--large-screen-only'>
+          L
         </th>
-        <th>
-          Goals
+        <th className='mdl-layout--large-screen-only'>
+          F
         </th>
-        <th>
-          GA
+        <th className='mdl-layout--large-screen-only'>
+          A
         </th>
         <th>
           GD
         </th>
         <th className='mdl-data-table__header--sorted-descending'>
-          Points
+          Pts
         </th>
       </tr>
     </thead>
@@ -45,11 +45,11 @@ const Standings = ({standing}) => (
             <a className='mdl-navigation__link' href=''>{team.teamName}</a>
           </td>
           <td>{team.playedGames}</td>
-          <td>{team.wins}</td>
-          <td>{team.draws}</td>
-          <td>{team.losses}</td>
-          <td>{team.goals}</td>
-          <td>{team.goalsAgainst}</td>
+          <td className='mdl-layout--large-screen-only'>{team.wins}</td>
+          <td className='mdl-layout--large-screen-only'>{team.draws}</td>
+          <td className='mdl-layout--large-screen-only'>{team.losses}</td>
+          <td className='mdl-layout--large-screen-only'>{team.goals}</td>
+          <td className='mdl-layout--large-screen-only'>{team.goalsAgainst}</td>
           <td>{team.goalDifference}</td>
           <td>{team.points}</td>
         </tr>
