@@ -12,3 +12,10 @@
     border-top: 2px solid rgba(black, 0.3);
   }
 }
+
+// check for leaky styles
+.loader {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
