@@ -12,3 +12,6 @@ class App extends Component {
 }
 
 export default App
+
+// <Layout />
+// {React.cloneElement(this.props.children, this.props)}

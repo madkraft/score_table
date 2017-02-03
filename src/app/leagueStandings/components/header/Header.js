@@ -19,3 +19,7 @@ const Header = ({caption}) => (
 )
 
 export default Header
+
+Header.propTypes = {
+  caption: React.PropTypes.string.isRequired
+}

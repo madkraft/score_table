@@ -65,3 +65,8 @@ const Standings = ({standing, loading}) => {
 }
 
 export default Standings
+
+Standings.propTypes = {
+  standing: React.PropTypes.array.isRequired,
+  loading: React.PropTypes.bool
+}
